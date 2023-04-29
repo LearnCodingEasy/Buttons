@@ -1,0 +1,59 @@
+/* Font Family  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+/* Style Of Body For Explain  */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #093e4f;
+}
+.button {
+  background: linear-gradient(to right, #673ab7 50%, #512da8);
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2.8em;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.button .button-text {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.button .button-icon {
+  margin-right: 1em;
+  position: absolute;
+  left: 0.3em;
+  height: 2.2em;
+  width: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 0.3em;
+  transition: all 0.3s;
+}
+
+.button .button-icon i {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+  transform: translateX(0.1em);
+}
+
+.button:hover .button-icon {
+  width: calc(100% - 0.6em);
+}
+
+.icon:active .button-icon {
+  transform: scale(0.95);
+}
